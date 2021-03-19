@@ -94,9 +94,13 @@ a {
 }
 .pre-order {
   display: none; 
-  width: 500px; 
+  width: 750px; 
   border-radius: 10px;
   text-align: center;
+  background: url('../img/cover-image.jpg') #010202 no-repeat left / 350px;
+  background-position: -180px 50%;
+  border: 2px solid #E5E5E5;
+  color:#E5E5E5;
 }
 .pre-order h2 {
   text-transform: uppercase;
@@ -105,7 +109,7 @@ a {
   font-size: 16px;
   line-height: 125%;
   margin-bottom: 15px;
-  width: 90%;
+  width: 60%;
 }
 /* @media (max-width: 1200px) {
   .app {
@@ -131,6 +135,13 @@ a {
   }
   .film-logo {
     max-width: 100%;
+  }
+  .pre-order {
+    background: #010202;
+    width: 500px;
+  }
+  .pre-order input {
+    width: 90%;
   }
 }
 @media (max-width: 576px) {
