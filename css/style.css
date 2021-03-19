@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #010202;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  width: 90%;
+  max-width: 1146px;
+  margin: auto;
+  padding: 56px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;    
+}
+.logo {
+  display: block;
+}
+.user {
+  display: flex;
+  align-items: center;    
+}
+.user-name {
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;    
+}
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 15px;    
+}
+.app {
+  /* background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%), 
+  url('../img/cover-image.jpg') no-repeat center right; */
+  background: linear-gradient(90deg, #010202 0%,  #010202 43%, rgba(1, 2, 2, 0.2) 90%);
+  height: 100vh;
+  color: #fff;    
+}
+.film {
+  width: 90%;
+  max-width: 1146px;
+  margin: auto;
+  padding: 7% 0;
+  height: calc(100% - 152px);    
+}
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  opacity: 0.4;
+  color: #E5E5E5;
+  font-size: 16px;
+  line-height: 140%;
+}
+.tags > * {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.age {
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  padding: 1px 5px;
+}
+.description {
+  max-width: 460px;
+  font-size: 21px;
+  line-height: 140%;
+  margin-bottom: 36px;
+}
+.button {
+  padding: 11px 26px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  line-height: 140%;
+  background: #2F2F2F;
+  color: #fff;
+  cursor: pointer;
+}
+.button-primary {
+  margin-right: 15px;
+  background: #EA6E20;
+}
+.button-text {
+  margin-left: 10px;
+  vertical-align: text-bottom;
+}
+.pre-order {
+  display: none; 
+  width: 500px; 
+  border-radius: 10px;
+  text-align: center;
+}
+.pre-order h2 {
+  text-transform: uppercase;
+}
+.pre-order input {
+  font-size: 16px;
+  line-height: 125%;
+  margin-bottom: 15px;
+  width: 90%;
+}
+/* @media (max-width: 1200px) {
+  .app {
+    background-size: 50%;
+  }
+} */
+@media (max-width: 768px) {
+  .app {
+    height: auto;
+    padding-bottom: 350px;
+    /* background-position: bottom center; */
+    background: url('../img/cover-image.jpg') no-repeat bottom center / 300px;
+  }
+  video {
+    display: none;
+  }
+  .film {
+    padding-top: 2%;
+  }
+  .description {
+    font-size: 16px;
+    max-width: 330px;
+  }
+  .film-logo {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .user-name,
+  .button-text {
+    display: none;
+  }
+  .app {
+    background-size: 300px;
+  }
+  .button {
+    margin-bottom: 10px;
+  }
+  .pre-order h2 {
+    font-size: 20px;
+  }
+  .pre-order input {
+    font-size: 14px;
+  }
+}
